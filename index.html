@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- ícones adicionados no head e no footer-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+<link rel="icon" href="imagens/topSecret.png">
+</head>
+
+<body id="root">
+    <!-- imagem cofre - Título-->
+<section>
+    <div id="imagemTitulo">
+        <img src="imagens/imagemTitulo.png">
+    </div>
+</section>
+    <!--br para espaçar mais -->
+
+<br><br><br><br><br><br><br>
+
+    <main>
+
+        <h1>CODIFICADOR E DECODIFICADOR</h1>
+
+<br>
+    <!--2 opções de escolha para a cripto -->
+
+        <form id="escolherTipoDeCriptografia">
+            <div id="tipoCripto">
+            <p>Escolha o tipo de criptografia:</p>
+        </div>
+            <br>
+
+            <div id="subTitulo">
+                <p>
+                    <i><u><h2>Caso você escolha Cifra de César, é obrigatório selecionar o valor do incremento.</h2></u></i>
+                </p>
+            </div>
+            
+            <br>
+        </form>
+
+            <select name="" id="selecionarCriptografia">
+                <option value="base64" id="base64">Base 64</option>
+                <option value="cifraDeCesar" id="cifraDeCesar">Cifra De Cesar</option>
+            </select>
+<br>
+            <!--Incremento = quantas "casas" a letra vai andar vai andar -->
+
+        <form id="incrementoCifra">
+            <input type="number" id="inputIncremento" placeholder=" Incremento">
+        </form>
+<br>
+        <form id="insiraTexto">
+           
+            <label class="InsiraTextBox" for="" >Insira o texto aqui:</label>
+            
+            <br>
+            <p>
+            <input type="text" id="textoInicial" placeholder=" Sua mensagem aqui...">
+        </p>
+        </form>
+        <br>
+        <form id="radioBtns">
+            <input type="radio" name="criptografia" value="codificar" id="codificar">
+            <label for="">Codificar</label>
+            <input type="radio" name="criptografia" value="decodificar" id="decodificar">
+            <label for="">Decodificar</label>
+        </form>
+        <br>
+        <input type="button" value = "Codificar/Decodificar" id="submit">
+        <div class="div">
+            <p id="textoFinal"></p> 
+        </div>
+        <br><br>
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/base64.js"></script>
+    <script src="./js/cifraDeCesar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<br><br>
+
+    <!-- btn link github-->
+
+    <footer>
+        <a id="button" href="https://github.com/marthalucena" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+
+
+    </footer>
+
+</body>
+
+</html>
